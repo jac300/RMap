@@ -7,21 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		732F6EDD1EBBE23200081044 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732F6EDC1EBBE23200081044 /* AppDelegate.swift */; };
-		732F6EDF1EBBE23200081044 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732F6EDE1EBBE23200081044 /* ViewController.swift */; };
-		732F6EE21EBBE23200081044 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 732F6EE01EBBE23200081044 /* Main.storyboard */; };
-		732F6EE41EBBE23200081044 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 732F6EE31EBBE23200081044 /* Assets.xcassets */; };
-		732F6EE71EBBE23200081044 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 732F6EE51EBBE23200081044 /* LaunchScreen.storyboard */; };
+		732F6EDF1EBBE23200081044 /* RMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732F6EDE1EBBE23200081044 /* RMapViewController.swift */; };
+		732F6EF41EBBE37000081044 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732F6EF01EBBE37000081044 /* AppDelegate.swift */; };
+		732F6EF51EBBE37000081044 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 732F6EF11EBBE37000081044 /* Assets.xcassets */; };
+		732F6EF61EBBE37000081044 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 732F6EF31EBBE37000081044 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		732F6ED91EBBE23200081044 /* RMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		732F6EDC1EBBE23200081044 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		732F6EDE1EBBE23200081044 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		732F6EE11EBBE23200081044 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		732F6EE31EBBE23200081044 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		732F6EE61EBBE23200081044 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		732F6EE81EBBE23200081044 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		732F6EDE1EBBE23200081044 /* RMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMapViewController.swift; sourceTree = "<group>"; };
+		732F6EF01EBBE37000081044 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = RMap/SupportingFiles/AppDelegate.swift; sourceTree = "<group>"; };
+		732F6EF11EBBE37000081044 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = RMap/SupportingFiles/Assets.xcassets; sourceTree = "<group>"; };
+		732F6EF31EBBE37000081044 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RMap/SupportingFiles/Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +37,7 @@
 			children = (
 				732F6EDB1EBBE23200081044 /* RMap */,
 				732F6EDA1EBBE23200081044 /* Products */,
+				732F6EEF1EBBE35C00081044 /* SupportingFiles */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +52,28 @@
 		732F6EDB1EBBE23200081044 /* RMap */ = {
 			isa = PBXGroup;
 			children = (
-				732F6EDC1EBBE23200081044 /* AppDelegate.swift */,
-				732F6EDE1EBBE23200081044 /* ViewController.swift */,
-				732F6EE01EBBE23200081044 /* Main.storyboard */,
-				732F6EE31EBBE23200081044 /* Assets.xcassets */,
-				732F6EE51EBBE23200081044 /* LaunchScreen.storyboard */,
-				732F6EE81EBBE23200081044 /* Info.plist */,
+				732F6EDE1EBBE23200081044 /* RMapViewController.swift */,
 			);
 			path = RMap;
+			sourceTree = "<group>";
+		};
+		732F6EEF1EBBE35C00081044 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				732F6EF01EBBE37000081044 /* AppDelegate.swift */,
+				732F6EF11EBBE37000081044 /* Assets.xcassets */,
+				732F6EF21EBBE37000081044 /* Base.lproj */,
+				732F6EF31EBBE37000081044 /* Info.plist */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		732F6EF21EBBE37000081044 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Base.lproj;
+			path = RMap/SupportingFiles/Base.lproj;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,8 +108,7 @@
 				TargetAttributes = {
 					732F6ED81EBBE23200081044 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 4Q2DT3U46C;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -124,9 +135,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				732F6EE71EBBE23200081044 /* LaunchScreen.storyboard in Resources */,
-				732F6EE41EBBE23200081044 /* Assets.xcassets in Resources */,
-				732F6EE21EBBE23200081044 /* Main.storyboard in Resources */,
+				732F6EF61EBBE37000081044 /* Info.plist in Resources */,
+				732F6EF51EBBE37000081044 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,31 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				732F6EDF1EBBE23200081044 /* ViewController.swift in Sources */,
-				732F6EDD1EBBE23200081044 /* AppDelegate.swift in Sources */,
+				732F6EF41EBBE37000081044 /* AppDelegate.swift in Sources */,
+				732F6EDF1EBBE23200081044 /* RMapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		732F6EE01EBBE23200081044 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				732F6EE11EBBE23200081044 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		732F6EE51EBBE23200081044 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				732F6EE61EBBE23200081044 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		732F6EE91EBBE23200081044 /* Debug */ = {
@@ -263,11 +254,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4Q2DT3U46C;
-				INFOPLIST_FILE = RMap/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = RMap/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JenniferClark.RMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -276,11 +268,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4Q2DT3U46C;
-				INFOPLIST_FILE = RMap/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = RMap/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JenniferClark.RMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
